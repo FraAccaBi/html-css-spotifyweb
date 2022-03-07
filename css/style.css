@@ -83,21 +83,34 @@ body{
     max-width: 320px;
     margin: 0 auto;
 }
-.app_main{
-    position: relative;
-}
+
 
 .main_aside{
     flex-direction: column;
     justify-content: space-between;
-    height: calc(100vh - 10vh);
+    height: calc(100vh - 40px + 35px);
 }
 
-
+.upgrade_btn{
+    color: var(--medium-text-color);
+    border: 1px solid var(--medium-text-color);
+    background-color: transparent;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 3px;
+}
+.header{
+    background-color: #080B12;
+    height: 35px;
+}
 .main_nav{
     flex-wrap: wrap;  
     justify-content: center;
     align-items: center;
+    padding-top: 1.5rem;
 }
 .options{
     text-transform: uppercase;
@@ -107,10 +120,10 @@ body{
 }
 
 
-.main{
+.playlist_selection{
     overflow-y: scroll;
     padding-top: 10px;
-    height: calc(100vh - 30px);
+    height: calc(100vh - 40px);
 }
 section{
     padding-left: 5px;
@@ -131,7 +144,6 @@ h2{
     text-align: center;
     font-size: smaller;
     color: var(---light-text-color);
-    padding: 0.4rem;
 }
 .box{
     height: 120px;
