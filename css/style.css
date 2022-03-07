@@ -27,17 +27,42 @@ a{
 
 /* #endregion COMMON*/
 
+/* #region COLUMNS*/
+
+.cl_10{
+    float: left;
+    width: 10%;
+    background-color: red;
+}
+.cl_90{
+    float: left;
+    width: 90%;
+    background-color: blue;
+}
+/* #endregion COLUMNS*/
+
+
 /* #region */
 /* #endregion */
 
-/* #region XS-SPOTIFY*/
-
-
-
-
-
-
-
-
-
-/* #endregion XS-SPOTIFY*/
+.main{
+    overflow-y: scroll;
+}
+.main_nav{
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+    height: calc(100vh - 10vh)
+}
+.debug_bx{
+    height: 50px;
+    width: 50px;
+    background-color: green;
+}
+.debug_footer{
+    background-color: #000000;
+    height: 10vh;
+    align-items: baseline;
+    color: #C1C2C4;
+    width: 100%;
+}
