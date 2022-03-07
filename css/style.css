@@ -24,20 +24,22 @@ a{
 .flex{
     display: flex;
 }
-
+body{
+    font-family: 'Roboto', sans-serif;
+}
 /* #endregion COMMON*/
 
 /* #region COLUMNS*/
 
-.cl_10{
+.cl_aside{
     float: left;
-    width: 10%;
+    width: 50px;
     background-color: red;
 }
-.cl_90{
+.cl_main{
     float: left;
-    width: 90%;
-    background-color: blue;
+    width: calc(100% - 50px);
+    background-color: var(--main-background-color);
 }
 /* #endregion COLUMNS*/
 
@@ -45,18 +47,50 @@ a{
 /* #region */
 /* #endregion */
 
-.main{
-    overflow-y: scroll;
+.container{
+    max-width: 321px;
+    margin: 0 auto;
+}
+.main_aside{
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 10vh);
 }
 .main_nav{
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 1rem;
-    height: calc(100vh - 10vh)
+    flex-wrap: wrap;  
+    justify-content: center;
+    align-items: center;
+}
+.options{
+    text-transform: uppercase;
+    color: var(--dark-text-color);  
+    font-size: xx-small;
+    padding: 3px;
+}
+.main{
+    overflow-y: scroll;
+    padding-top: 10px;
+}
+section{
+    padding-left: 5px;
+}
+.main_playlist{
+    flex-wrap: wrap;  
+    height: calc(100vh - 10vh);
+    gap: 7px;
+    
+    
+}
+.container_sm{
+    width: 120px;
+    background-color: rgba(255, 251, 0, 0.479);
+    text-align: center;
+    font-size: smaller;
+    color: var(---light-text-color);
 }
 .debug_bx{
-    height: 50px;
-    width: 50px;
+    height: 120px;
+    width: 120px;
     background-color: green;
 }
 .debug_footer{
@@ -65,4 +99,8 @@ a{
     align-items: baseline;
     color: #C1C2C4;
     width: 100%;
+}
+h2{
+    color: var(---light-text-color);
+    font-size: smaller;
 }
