@@ -1,0 +1,43 @@
+/* #region COMMON*/
+:root{
+    --sidebar-background-color: #000000;
+    --upgrade-background-color: #080B12;
+    --main-background-color: #141922;
+    --dark-text-color: #74767B; /*in evidenza*/
+    --medium-text-color: #C1C2C4; /*upgrade*/
+    ---light-text-color: #D2D2D2; /*Home btn*/
+    --light-color: #FFFFFF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.flex{
+    display: flex;
+}
+
+/* #endregion COMMON*/
+
+/* #region */
+/* #endregion */
+
+/* #region XS-SPOTIFY*/
+
+
+
+
+
+
+
+
+
+/* #endregion XS-SPOTIFY*/
