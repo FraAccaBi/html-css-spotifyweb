@@ -43,19 +43,57 @@ body{
 }
 /* #endregion COLUMNS*/
 
+/* #region PLAYLIST COVERS */
+.playlist_1{
+    background-image: url(../img/metal_lifting.jpg);
+}
+.playlist_2{
+    background-image: url(../img/stranger.jpeg);
+}
+.playlist_3{
+    background-image: url(../img/aquietplace.jpeg);
+}
+.playlist_4{
+    background-image: url(../img/split.jpeg);
+}
+.playlist_5{
+    background-image: url(../img/cure.jpeg);
+}
+.playlist_6{
+    background-image: url(../img/sinister.jpeg);
+}
+.playlist_7{
+    background-image: url(../img/radar.jpeg);
+}
+.playlist_8{
+    background-image: url(../img/mixdaily.jpeg);
+}
+.playlist_9{
+    background-image: url(../img/youg.jpeg);
+}
+.playlist_10{
+    background-image: url(../img/einaudi.jpeg);
+}
+/* #endregion PLAYLIST COVERS */
 
 /* #region */
 /* #endregion */
 
 .container{
-    max-width: 321px;
+    max-width: 320px;
     margin: 0 auto;
 }
+.app_main{
+    position: relative;
+}
+
 .main_aside{
     flex-direction: column;
     justify-content: space-between;
     height: calc(100vh - 10vh);
 }
+
+
 .main_nav{
     flex-wrap: wrap;  
     justify-content: center;
@@ -67,40 +105,56 @@ body{
     font-size: xx-small;
     padding: 3px;
 }
+
+
 .main{
     overflow-y: scroll;
     padding-top: 10px;
+    height: calc(100vh - 30px);
 }
 section{
     padding-left: 5px;
-}
-.main_playlist{
-    flex-wrap: wrap;  
-    height: calc(100vh - 10vh);
-    gap: 7px;
-    
-    
-}
-.container_sm{
-    width: 120px;
-    background-color: rgba(255, 251, 0, 0.479);
-    text-align: center;
-    font-size: smaller;
-    color: var(---light-text-color);
-}
-.debug_bx{
-    height: 120px;
-    width: 120px;
-    background-color: green;
-}
-.debug_footer{
-    background-color: #000000;
-    height: 10vh;
-    align-items: baseline;
-    color: #C1C2C4;
-    width: 100%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 h2{
     color: var(---light-text-color);
     font-size: smaller;
 }
+.main_playlist{
+    flex-wrap: wrap;      
+    gap: 7px; 
+}
+
+.container_sm{
+    width: 120px;
+    text-align: center;
+    font-size: smaller;
+    color: var(---light-text-color);
+    padding: 0.4rem;
+}
+.box{
+    height: 120px;
+    width: 120px;
+    background-size: contain;
+}
+.circle_box{
+    border-radius: 100%;
+}
+
+p{
+    font-size: xx-small;
+    color: var(--dark-text-color);
+}
+
+
+
+
+.debug_footer{
+    background-color: #000000;
+    height: 40px;
+    align-items: baseline;
+    color: #C1C2C4;
+    width: 100%;
+}
+
