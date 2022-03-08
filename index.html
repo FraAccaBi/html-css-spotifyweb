@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/style2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
@@ -13,12 +14,10 @@
 </head>
 <body>
     <div class="container">
-        <main class="app_main row">
-            <aside class="main_aside cl_aside flex">
+        <main class="container_main flex">
+            <aside class="cl_aside flex">
                 <div class="aside_top flex">
-                    <div class="icons">
-                        <img src="./img/logo-small.svg" alt="" id="logo">
-                    </div>
+                    <div class="logo"></div>
                     <div class="icons">
                         <img src="./img/home.svg" alt="">
                     </div>
@@ -39,13 +38,14 @@
             </aside>
             <!-- /.app_aside -->
             
-            <div class="playlist_selection cl_main">   
+            <div class="cl_main">   
                 <div class="header">
                     <a href="" class="upgrade_btn">
                         EFFETTUA UPGRADE
                     </a>
                     <!-- /.upgrade_btn -->
-                </div>   
+                </div>  
+                <!-- /.header --> 
                 <nav class="main_nav flex">
                     <a href="" class="options">in evidenza</a>
                     <a href="" class="options">podcast</a>
@@ -126,8 +126,8 @@
             <!-- /.playlist_selection -->
         </main>
         <!-- /.app_main -->
-        <footer class="app_footer flex">
-            <div class="cl_30 footer_left flex">
+        <footer class="flex">
+            <div class="cl_33 footer_left flex">
                 <img src="./img/sinister.jpeg" alt="">
                 <h6>Sinister</h6>
                 <p>Brano</p>
@@ -135,7 +135,7 @@
                 <i class="fa fa-heart" aria-hidden="true"></i>
                 <i class="fa fa-folder" aria-hidden="true"></i>
             </div>
-            <div class="cl_30 footer_center flex">
+            <div class="cl_33 footer_center flex">
                 <i class="fas fa-random"></i>
                 <i class="fas fa-step-backward"></i>
                 <i class="fas fa-play-circle"></i>
@@ -147,7 +147,7 @@
                 </div>
                 <p>4:35</p>
             </div>
-            <div class="cl_30 footer_right flex">
+            <div class="cl_33 footer_right flex">
                 <i class="fas fa-list"></i>
                 <i class="fas fa-desktop"></i>
                 <i class="fas fa-volume-down"></i>
