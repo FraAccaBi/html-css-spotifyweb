@@ -65,6 +65,15 @@ body{
 /* #region */
 /* #endregion */
 
+/* Mobile First */
+
+/* #region layout xs*/
+.container{
+    position: relative;
+}
+.app_main{
+    height: calc(100vh - 40px);
+}
 .cl_aside{
     float: left;
     width: 30px;
@@ -75,15 +84,11 @@ body{
     width: calc(100% - 30px);
     background-color: var(--main-background-color);
 }
-.container{
-    max-width: 320px;
-    margin: 0 auto;
-    position: relative;
-}
+
 .main_aside{
     flex-direction: column;
     justify-content: space-between;
-    height: calc(100vh - 40px + 40px);
+    height: calc(100vh - 40px);
     color:var(--light-color);
 }
 .aside_bottom, .aside_top{
@@ -134,7 +139,6 @@ body{
 
 .playlist_selection{
     overflow-y: scroll;
-    padding-top: 10px;
     height: calc(100vh - 40px);
 }
 section{
@@ -231,4 +235,89 @@ hr{
 }
 .footer_right{
     column-gap: 0.3rem;
+}
+/* #endregion layout xs*/
+
+
+@media screen and (min-width: 400px){
+    
+    .container{
+        position: relative;
+    }
+    .app_main{
+        height: calc(100vh - 40px);
+        transition: all 1s;
+    }
+    .cl_aside{
+        float: left;
+        width: 150px;
+        background-color: black
+    }
+    .cl_main{
+        float: left;
+        width: calc(100% - 150px);
+        background-color: var(--main-background-color);
+    }
+    
+    .main_aside{
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(100vh - 40px);
+        color:var(--light-color);
+    }
+}
+
+@media screen and (min-width: 768px){
+    
+    .container{
+        position: relative;
+    }
+    .app_main{
+        height: calc(100vh - 40px);
+        transition: all 1s;
+    }
+    .cl_aside{
+        float: left;
+        width: 150px;
+        background-color: black
+    }
+    .cl_main{
+        float: left;
+        width: calc(100% - 150px);
+        background-color: var(--main-background-color);
+    }
+    
+    .main_aside{
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(100vh - 40px);
+        color:var(--light-color);
+    }
+}
+@media screen and (min-width: 1024px){
+    
+    .container{
+        position: relative;
+    }
+    .app_main{
+        height: calc(100vh - 40px);
+        transition: all 1s;
+    }
+    .cl_aside{
+        float: left;
+        width: 200px;
+        background-color: black
+    }
+    .cl_main{
+        float: left;
+        width: calc(100% - 200px);
+        background-color: var(--main-background-color);
+    }
+    
+    .main_aside{
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(100vh - 40px);
+        color:var(--light-color);
+    }
 }
