@@ -75,7 +75,7 @@ p{
 .container_main{
     height: calc(100vh - 50px);
     width: 100vw;
-    background-color: blue;
+    background-color: var(--main-background-color);
 }
 
 
@@ -133,18 +133,45 @@ p{
     border-radius: 5px;
     font-size: 3px;
 }
+
+.main_nav{
+    flex-wrap: wrap;  
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+.options{
+    text-transform: uppercase;
+    color: var(--dark-text-color);  
+    font-size: xx-small;
+    padding: 3px;
+}
+
 .container_sm{
-    width: 120px;
+    width: calc(100% /2);
     text-align: center;
     font-size: smaller;
     color: var(---light-text-color);
+    flex-direction: column;
+    align-items: center;
 }
 .main_playlist{
-    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section{
+    padding-left: 5px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+h2{
+    color: var(---light-text-color);
+    font-size: smaller;
+    padding-bottom: 0.1rem;
 }
 .box{
-    height: 120px;
-    width: 120px;
+    height: 125px;
+    width: 125px;
     background-size: contain;
 }
 .circle_box{
@@ -163,7 +190,7 @@ footer{
 .cl_33{
     color: var(--light-color);
     height: 50px;
-    width: 33.3%;
+    width: 33.33%;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
@@ -200,3 +227,57 @@ hr{
 
 /* #endregion FOOTER*/
 
+@media screen and (min-width: 368px){
+    
+    
+    .cl_aside{
+        width: 120px; 
+    }
+    .cl_main{
+        width: calc(100% - 120px);
+    }
+    .logo{
+        background-image: url(../img/logo.svg);
+        background-repeat: no-repeat;
+        width: 75px;
+        align-self: baseline;
+    }
+    .box{
+        height: 150px;
+        width: 150px;
+    }
+
+}
+
+@media screen and (min-width: 768px){
+    .container_sm{
+        width: calc(100% / 4);
+    }
+    .box{
+        height: 180px;
+        width: 180px;
+    }
+  
+    
+    
+}
+@media screen and (min-width: 1024px){
+    .container_sm{
+        width: calc(100% / 5);
+    }
+    .box{
+        height: 180px;
+        width: 180px;
+    }
+ 
+}
+@media screen and (min-width: 1200px){
+    .container_sm{
+        width: calc(100% / 6);
+    }
+    .box{
+        height: 190px;
+        width: 190px;
+    }
+ 
+}
