@@ -97,6 +97,7 @@ p{
 }
 .aside_bottom{
     justify-content: flex-end;
+    row-gap: 5px;
 }
 .logo{
     background-image: url(../img/logo-small.svg);
@@ -218,10 +219,21 @@ footer{
 .footer_left{
     flex-direction: column;    
     align-items: flex-start;
+    column-gap: 0.5rem;
 }
 .footer_left>img{
     height: 40px;
     padding: 5px;
+}
+.footer_left>p{
+    line-height: 6px;
+}
+.footer_left>h6{
+    padding-bottom: 4px;
+}
+.footer_left>i{
+    color: #74767B;
+    font-size: small;
 }
 .footer_center{
     flex-direction: column;
@@ -232,7 +244,9 @@ footer{
     column-gap: 0.8rem;
 }
 .footer_right{
-    column-gap: 0.3rem;
+    column-gap: 0.5rem;
+    justify-content: flex-end;
+    padding-right: 0.5rem;
 }
 hr{
     display: inline-block;
@@ -259,6 +273,23 @@ hr{
 }
 .prog_line:hover #point{
     background-color: #74A92A;
+}
+.footer_right>i{
+    font-size: small;
+}
+.f_center_top>i{
+    font-size: medium;
+    transition: all 0.4s;
+}
+.f_center_top{
+    column-gap: 0.4rem;
+    align-items: center;
+}
+.fa-play-circle:before{
+    background-color: white;
+    color:#282828 ;
+    border-radius: 100%;
+    padding: 2px;
 }
 /* #endregion FOOTER*/
 
@@ -291,6 +322,15 @@ hr{
     .icons>img, .icons>.aside_text{
         display: inline-block;
     }
+    .f_center_bottom>.prog_line>#complete{
+        width: 4vw;
+    }
+    .f_center_bottom>.prog_line>#not_complete{
+        width: 8vw; 
+    }
+    .f_center_top{
+        column-gap: 0.5rem;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -301,16 +341,36 @@ hr{
         height: 18vw;
         width: 18vw;
     }
-    
-    
+    .f_center_bottom>.prog_line>#complete{
+        width: 5vw;
+    }
+    .f_center_bottom>.prog_line>#not_complete{
+        width: 10vw; 
+    }
+    .f_center_top{
+        column-gap: 0.6rem;
+    }
 }
+
+
 @media screen and (min-width: 1024px){
 
     .box{
         height: 16vw;
         width: 16vw;
     }
+    .f_center_bottom>.prog_line>#complete{
+        width: 6vw;
+    }
+    .f_center_bottom>.prog_line>#not_complete{
+        width: 12vw; 
+    }
+    .f_center_top{
+        column-gap: 0.7rem;
+    }
 }
+
+
 @media screen and (min-width: 1200px){
     .container_sm{
         width: calc(100% / 6);
@@ -329,5 +389,21 @@ hr{
     .cl_33{
         color: var(--light-color);
         height: 80px;
+    }
+    .f_center_bottom>.prog_line>#complete{
+        width: 7vw;
+    }
+    .f_center_bottom>.prog_line>#not_complete{
+        width: 14vw; 
+    }
+    .f_center_top>i{
+        font-size: x-large;
+        padding-bottom: 2px;
+    }
+    .f_center_top{
+        column-gap: 0.8rem;
+    }
+    .fa-play-circle:before{
+        font-size: xx-large;
     }
 }
