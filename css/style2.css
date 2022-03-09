@@ -86,6 +86,7 @@ p{
     width: 30px;
     flex-direction: column;
     background-color: #000000;
+    transition: all 1s;
 }
 .aside_top, .aside_bottom{
     height: 50%;
@@ -102,12 +103,26 @@ p{
     background-repeat: no-repeat;
     height: 22px;
     width: 22px;
+    margin: 5px;
+    transition: all 0.5s;
 }
 .icons{
     height: 18px;
     width: 18px;
+    align-items: baseline;
+    column-gap: 2px;
 }
+.icons>img{
+    color: #D2D2D2;
+}
+.aside_text{
+    visibility: hidden;
+}
+#user{
+    background-color: var(--dark-text-color);
+    border-radius: 100%;
 
+}
 
 /* #endregion ASIDE*/
 
@@ -175,6 +190,7 @@ h2{
     height: 30vw;
     width: 30vw;
     background-size: contain;
+    transition: all 0.5s;
 }
 .circle_box{
     border-radius: 100%;
@@ -189,7 +205,7 @@ h5{
 footer{
     height: 50px;
     width: 100%;
-    background-color: #000000;
+    background-color:#282828;
 }
 .cl_33{
     color: var(--light-color);
@@ -243,14 +259,23 @@ hr{
     .logo{
         background-image: url(../img/logo.svg);
         background-repeat: no-repeat;
-        width: 75px;
+        background-size: cover;
+        width: 100px;
+        height: 30px;
         align-self: baseline;
     }
     .box{
         height: 30vw;
         width: 30vw;
     }
-
+    .aside_text{
+        color: var(---light-text-color);
+        font-size: 0.8rem;
+        visibility: visible;
+    }
+    .icons>img, .icons>.aside_text{
+        display: inline-block;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -278,5 +303,16 @@ hr{
     .box{
         height: 12vw;
         width: 12vw;
+    }
+    .container_main{
+        height: calc(100vh - 80px);
+       
+    }
+    footer{
+        height: 80px;
+    }
+    .cl_33{
+        color: var(--light-color);
+        height: 80px;
     }
 }
