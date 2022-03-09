@@ -30,6 +30,8 @@ body{
 }
 p{
     font-size: 9px;
+    color: var(---light-text-color);
+    padding-bottom: 5px;
 }
 /* #endregion COMMON*/
 
@@ -157,7 +159,7 @@ p{
 }
 .main_playlist{
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
 }
 section{
     padding-left: 5px;
@@ -170,14 +172,16 @@ h2{
     padding-bottom: 0.1rem;
 }
 .box{
-    height: 125px;
-    width: 125px;
+    height: 30vw;
+    width: 30vw;
     background-size: contain;
 }
 .circle_box{
     border-radius: 100%;
 }
-
+h5{
+    padding-top: 5px;
+}
 /* #endregion MAIN*/
 
 /* #region FOOTER*/
@@ -243,8 +247,8 @@ hr{
         align-self: baseline;
     }
     .box{
-        height: 150px;
-        width: 150px;
+        height: 30vw;
+        width: 30vw;
     }
 
 }
@@ -254,30 +258,25 @@ hr{
         width: calc(100% / 4);
     }
     .box{
-        height: 180px;
-        width: 180px;
+        height: 18vw;
+        width: 18vw;
     }
-  
     
     
 }
 @media screen and (min-width: 1024px){
-    .container_sm{
-        width: calc(100% / 5);
-    }
+
     .box{
-        height: 180px;
-        width: 180px;
+        height: 16vw;
+        width: 16vw;
     }
- 
 }
 @media screen and (min-width: 1200px){
     .container_sm{
         width: calc(100% / 6);
     }
     .box{
-        height: 190px;
-        width: 190px;
+        height: 12vw;
+        width: 12vw;
     }
- 
 }
