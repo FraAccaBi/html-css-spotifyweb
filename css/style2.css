@@ -168,6 +168,23 @@ section>p{
     max-width: 100%;
     transition: all 0.5s;
 }
+.box{
+    position: relative;
+}
+.box>i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 25px;
+    visibility: hidden;
+}
+.container_sm:hover .box>img{
+    filter: opacity(0.7);
+}
+.container_sm:hover .box>i{
+    visibility: visible;
+}
 .circle_box>img{
     border-radius: 100%;
 }
