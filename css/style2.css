@@ -387,6 +387,12 @@ hr{
     .f_left_right>i{
         display: inline;
     }
+    .footer_left{
+        justify-content: center;
+    }
+    .footer_left>.f_left_right{
+        padding-left: 1rem;
+    }
 }
 
 
@@ -442,7 +448,7 @@ hr{
     }
     .footer_left{
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
     }
     .footer_left>h6{
