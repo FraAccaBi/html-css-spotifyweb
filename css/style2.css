@@ -8,6 +8,7 @@
     --medium-text-color: #C1C2C4; /*upgrade*/
     ---light-text-color: #D2D2D2; /*Home btn*/
     --light-color: #FFFFFF;
+    --hover_color:#74A92A;
 }
 *{
     margin: 0;
@@ -146,8 +147,12 @@ p{
     padding: 0.5rem;
     border-radius: 5px;
     font-size: 3px;
+    z-index: 5;
 }
-
+.upgrade_btn:hover{
+    color: var(--hover_color);
+    border: 1px solid var(--hover_color);
+}
 .main_nav{
     flex-wrap: wrap;  
     justify-content: center;
@@ -161,7 +166,7 @@ p{
     padding: 0.5rem;
 }
 .options:hover{
-    border-bottom: 1px solid #74A92A;
+    border-bottom: 1px solid var(--hover_color);
 }
 .container_sm{
     width: calc(100% /2);
@@ -295,7 +300,7 @@ hr{
     background-color: white;
 }
 .prog_line:hover #point{
-    background-color: #74A92A;
+    background-color: var(--hover_color);
 }
 .footer_right>i{
     font-size: small;
