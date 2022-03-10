@@ -51,19 +51,29 @@ p{
 .cl_aside{
     width: 30px;
     flex-direction: column;
+    padding-left: 4px;
     background-color: #000000;
     transition: all 1s;
 }
 .aside_top, .aside_bottom{
-    height: 50%;
     flex-direction: column;
-    width: 30px;
-    align-items: center;
+    width: 100%;
+    align-items: flex-start;
     gap: 2px;
+    padding-left: 5px;
+}
+.aside_top{
+    height: 65%;
+}
+.aside_bottom{
+    height: 35%;
 }
 .aside_bottom{
     justify-content: flex-end;
     row-gap: 5px;
+}
+.aside_bottom>.icons{
+    align-items: center;
 }
 .logo{
     background-image: url(../img/logo-small.svg);
@@ -88,7 +98,27 @@ p{
 #user{
     background-color: var(--dark-text-color);
     border-radius: 100%;
+}
+.playlist{
+    color: var(--dark-text-color);
+    font-size: 9px;
+    padding-top: 5px;
+    line-height: 13px;
+    overflow-y: auto;
+}
 
+.playlist > :first-child{
+    text-transform: uppercase;
+    color: var(---light-text-color);
+    font-size: 11px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.plus_btn{
+    background-color: var(--dark-text-color);
+    color: #000000;
+    font-size: x-large;
+    line-height: 14px;
 }
 
 /* #endregion ASIDE*/
@@ -303,9 +333,12 @@ hr{
         align-self: baseline;
     }
     
-    .aside_text{
+    .icons>.aside_text{
         color: var(---light-text-color);
         font-size: 0.8rem;
+        
+    }
+    .aside_text{
         visibility: visible;
     }
     .icons>img, .icons>.aside_text{
