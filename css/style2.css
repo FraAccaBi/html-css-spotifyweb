@@ -128,14 +128,18 @@ p{
 
 .cl_main{
     width: calc(100vw - 30px);
-    height: 100%;
+    height: calc(100%-80px);
     overflow-y: auto;
+    margin-top: 80px;
 }
 
 .header{
-    background-color: #080B12;
-    height: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 80px;
     width: 100%;
+    position: fixed;
+    z-index: 2;
+    margin-left: 120px;
 }
 .upgrade_btn{
     color: var(--medium-text-color);
@@ -368,6 +372,18 @@ hr{
     .f_center_top{
         column-gap: 0.5rem;
     }
+     .icons img{
+        width: 20px;
+    }
+    
+    .aside_bottom>.icons{
+        align-items: center;
+        width: 100%;
+        column-gap: 2px;
+    }
+    .aside_bottom .icons {
+        padding: 16px 0;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -393,6 +409,15 @@ hr{
     .footer_left>.f_left_right{
         padding-left: 1rem;
     }
+    #download_btn{
+        color: var(--dark-text-color);
+    }
+    #download_text{
+        color: var(--dark-text-color);
+    }
+    /*.aside_bottom img:first-of-type {
+        color: var(--dark-text-color);
+    }*/
 }
 
 
