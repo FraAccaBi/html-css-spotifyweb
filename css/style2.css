@@ -328,9 +328,10 @@ hr{
         background-image: url(../img/logo.svg);
         background-repeat: no-repeat;
         background-size: cover;
-        width: 100px;
-        height: 30px;
+        width: 100%;
+        height: 95px;
         align-self: baseline;
+        margin-left: 0px;
     }
     
     .icons>.aside_text{
