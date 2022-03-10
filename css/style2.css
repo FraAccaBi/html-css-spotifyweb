@@ -35,40 +35,6 @@ p{
 }
 /* #endregion COMMON*/
 
-/* #region PLAYLIST COVERS */
-
-.playlist_1{
-    background-image: url(../img/metal_lifting.jpg);
-}
-.playlist_2{
-    background-image: url(../img/stranger.jpeg);
-}
-.playlist_3{
-    background-image: url(../img/aquietplace.jpeg);
-}
-.playlist_4{
-    background-image: url(../img/split.jpeg);
-}
-.playlist_5{
-    background-image: url(../img/cure.jpeg);
-}
-.playlist_6{
-    background-image: url(../img/sinister.jpeg);
-}
-.playlist_7{
-    background-image: url(../img/radar.jpeg);
-}
-.playlist_8{
-    background-image: url(../img/mixdaily.jpeg);
-}
-.playlist_9{
-    background-image: url(../img/youg.jpeg);
-}
-.playlist_10{
-    background-image: url(../img/einaudi.jpeg);
-}
-/* #endregion PLAYLIST COVERS */
-
 
 .container{
     position: relative;
@@ -162,16 +128,20 @@ p{
     text-transform: uppercase;
     color: var(--dark-text-color);  
     font-size: xx-small;
-    padding: 3px;
+    padding: 0.5rem;
 }
-
+.options:hover{
+    border-bottom: 1px solid #74A92A;
+}
 .container_sm{
     width: calc(100% /2);
-    text-align: center;
     font-size: smaller;
     color: var(---light-text-color);
     flex-direction: column;
     align-items: center;
+    max-width: 300px;
+    padding: 0.5rem;
+    text-align: center;
 }
 .main_playlist{
     flex-wrap: wrap;
@@ -184,16 +154,21 @@ section{
 }
 h2{
     color: var(---light-text-color);
-    font-size: smaller;
+    font-size: 20px;
     padding-bottom: 0.1rem;
+    padding-left: 0.5rem;
 }
-.box{
-    height: 30vw;
-    width: 30vw;
-    background-size: contain;
+section>p{
+    padding-left: 0.5rem;
+}
+.recenty_played>h2{
+    padding-bottom: 10px;
+}
+.box>img{
+    max-width: 100%;
     transition: all 0.5s;
 }
-.circle_box{
+.circle_box>img{
     border-radius: 100%;
 }
 h5{
@@ -310,10 +285,7 @@ hr{
         height: 30px;
         align-self: baseline;
     }
-    .box{
-        height: 30vw;
-        width: 30vw;
-    }
+    
     .aside_text{
         color: var(---light-text-color);
         font-size: 0.8rem;
@@ -337,10 +309,7 @@ hr{
     .container_sm{
         width: calc(100% / 4);
     }
-    .box{
-        height: 18vw;
-        width: 18vw;
-    }
+    
     .f_center_bottom>.prog_line>#complete{
         width: 5vw;
     }
@@ -355,10 +324,7 @@ hr{
 
 @media screen and (min-width: 1024px){
 
-    .box{
-        height: 16vw;
-        width: 16vw;
-    }
+    
     .f_center_bottom>.prog_line>#complete{
         width: 6vw;
     }
@@ -375,10 +341,7 @@ hr{
     .container_sm{
         width: calc(100% / 6);
     }
-    .box{
-        height: 12vw;
-        width: 12vw;
-    }
+    
     .container_main{
         height: calc(100vh - 80px);
        
