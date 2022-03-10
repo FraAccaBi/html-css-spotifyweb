@@ -31,7 +31,7 @@ body{
 }
 p{
     font-size: 9px;
-    color: var(---light-text-color);
+    color: var(--dark-text-color);
     padding-bottom: 5px;
 }
 /* #endregion COMMON*/
@@ -146,7 +146,7 @@ p{
     right: 5px;
     padding: 0.5rem;
     border-radius: 5px;
-    font-size: 3px;
+    font-size: 10px;
     z-index: 5;
 }
 .upgrade_btn:hover{
@@ -193,8 +193,10 @@ h2{
     padding-bottom: 0.1rem;
     padding-left: 0.5rem;
 }
-section>p{
+.container_sm>p{
     padding-left: 0.5rem;
+    font-size: 11px;
+    color: var(--dark-text-color);
 }
 .recenty_played>h2{
     padding-bottom: 10px;
@@ -225,6 +227,7 @@ section>p{
 }
 h5{
     padding-top: 5px;
+    font-size: 15px;
 }
 /* #endregion MAIN*/
 
@@ -313,6 +316,7 @@ hr{
     column-gap: 0.4rem;
     align-items: center;
 }
+
 .fa-play-circle:before{
     background-color: white;
     color:#282828 ;
